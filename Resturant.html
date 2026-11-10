@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Royal Taste Restaurant</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <i class="fas fa-utensils"></i>
+            <span>Royal <span class="red">Taste</span></span>
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#offers">Offers</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+
+        <div class="nav-right">
+
+            <a href="#menu" class="nav-order">
+                Order Now
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Home / Hero Section -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <p class="welcome-text">
+                WELCOME TO ROYAL TASTE
+            </p>
+
+            <h1>
+                Experience the <br>
+                <span>Royal Taste</span> of Every Bite!
+            </h1>
+
+            <p class="hero-description">
+
+                Discover a world of delicious flavours at Royal Taste Restaurant.
+                From mouth-watering pizzas and juicy burgers to authentic rice
+                and curry, we serve happiness on every plate. vist Galle road colombo 7
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#menu" class="btn-primary">
+                    Order Now <i class="fas fa-arrow-right"></i>
+                </a>
+
+                <a href="#about" class="btn-secondary">
+                    Explore More
+                </a>
+
+            </div>
+
+            <div class="hero-features">
+
+                <div>
+                    <i class="fas fa-utensils"></i>
+                    <span>Fresh Food</span>
+                </div>
+
+                <div>
+                    <i class="fas fa-star"></i>
+                    <span>Quality Taste</span>
+                </div>
+
+                <div>
+                    <i class="fas fa-heart"></i>
+                    <span>Made With Love</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- About Us Section -->
+
+    <section class="about-section" id="about">
+
+        <div class="about-container">
+
+            <!-- About Image -->
+
+            <div class="about-image">
+
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800"
+                    alt="Royal Taste Restaurant">
+
+                <div class="experience-box">
+                    <h2>100%</h2>
+                    <p>Fresh & Quality Food</p>
+                </div>
+
+            </div>
+
+
+            <!-- About Content -->
+
+            <div class="about-content">
+
+                <p class="section-subtitle">ABOUT OUR RESTAURANT</p>
+
+                <h2>
+                    Welcome to <span>Royal Taste</span>
+                </h2>
+
+                <p>
+                    At Royal Taste Restaurant, we believe that great food
+                    brings people together. Our goal is to provide delicious
+                    meals, excellent service and a memorable dining experience.
+                </p>
+
+                <p>
+                    From freshly prepared pizzas and juicy burgers to delicious
+                    pasta and traditional rice and curry, we offer something
+                    special for everyone.
+                </p>
+
+                <p>
+                    We focus on quality ingredients, amazing flavours and
+                    customer satisfaction to make every visit special.
+                </p>
+
+
+                <!-- Features -->
+
+                <div class="about-features">
+
+                    <div>
+                        <i class="fas fa-utensils"></i>
+                        <span>Quality Food</span>
+                    </div>
+
+                    <div>
+                        <i class="fas fa-heart"></i>
+                        <span>Made With Love</span>
+                    </div>
+
+                    <div>
+                        <i class="fas fa-star"></i>
+                        <span>Best Experience</span>
+                    </div>
+
+                    <div>
+                        <i class="fas fa-users"></i>
+                        <span>Friendly Service</span>
+                    </div>
+
+                </div>
+
+
+                <a href="#menu" class="about-btn">
+                    Explore Our Menu
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Our Menu Section -->
+
+    <section class="menu-section" id="menu">
+
+        <div class="section-heading">
+
+            <p class="section-subtitle">DISCOVER OUR FOOD</p>
+
+            <h2>Our Delicious <span>Menu</span></h2>
+
+            <p>
+                Explore our delicious selection of freshly prepared food.
+            </p>
+
+        </div>
+
+
+        <!-- Menu Categories -->
+
+        <div class="menu-categories">
+
+            <button class="category-btn active" data-filter="all">All</button>
+            <button class="category-btn" data-filter="pizza">Pizza</button>
+            <button class="category-btn" data-filter="burger">Burgers</button>
+            <button class="category-btn" data-filter="pasta">Pasta</button>
+            <button class="category-btn" data-filter="rice">Rice & Curry</button>
+            <button class="category-btn" data-filter="dessert">Desserts</button>
+            <button class="category-btn" data-filter="beverage">Beverages</button>
+
+        </div>
+
+
+        <!-- Shopping Cart Information -->
+
+        <div class="cart-info">
+
+            <i class="fas fa-shopping-cart"></i> My Cart:
+            <span id="cartCount">0</span> Items
+
+            <span class="cart-divider">|</span>Total:
+            <span id="cartTotal">Rs. 0</span>
+
+        </div>
+
+
+        <!-- Food Cards -->
+
+        <div class="menu-container">
+
+
+            <!-- Pizza Card -->
+
+            <div class="food-card" data-category="pizza">
+
+                <div class="food-image">
+
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600" alt="Chicken Pizza">
+
+                    <span class="food-label">POPULAR</span>
+
+                </div>
+
+                <div class="food-details">
+
+                    <h3>Chicken Pizza</h3>
+
+                    <p>Delicious chicken pizza with cheese and fresh toppings.</p>
+
+                    <div class="food-bottom">
+
+                        <h4>Rs. 2,500</h4>
+
+                        <button class="add-cart" data-name="Chicken Pizza" data-price="2500">
+                            <i class="fas fa-cart-plus"></i> Add
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Burger Card -->
+
+            <div class="food-card" data-category="burger">
+
+                <div class="food-image">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTRqGaR_ibTT7e855cd4zG9-K6FN_rt9dpc1USbHaWYhVBEvcUzNPsmak&s=10"
+                        alt="Beef Burger" >
+
+                </div>
+
+                <div class="food-details">
+
+                    <h3>Classic Beef Burger</h3>
+
+                    <p>Juicy beef burger with cheese, lettuce and special sauce.</p>
+
+                    <div class="food-bottom">
+
+                        <h4>Rs. 1,450</h4>
+
+                        <button class="add-cart" data-name="Classic Beef Burger" data-price="1450">
+                            <i class="fas fa-cart-plus"></i> Add
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Pasta Card -->
+
+            <div class="food-card" data-category="pasta">
+
+                <div class="food-image">
+
+                    <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=600" alt="Chicken Pasta">
+
+                </div>
+
+                <div class="food-details">
+
+                    <h3>Chicken Pasta</h3>
+
+                    <p>Creamy pasta prepared with chicken and delicious sauce.</p>
+
+                    <div class="food-bottom">
+
+                        <h4>Rs. 1,800</h4>
+
+                        <button class="add-cart" data-name="Chicken Pasta" data-price="1800">
+                            <i class="fas fa-cart-plus"></i> Add
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Rice Card -->
+
+            <div class="food-card" data-category="rice">
+
+                <div class="food-image">
+
+                    <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=600" alt="Chicken Rice">
+
+                </div>
+
+                <div class="food-details">
+
+                    <h3>Chicken Rice & Curry</h3>
+
+                    <p>Traditional rice served with delicious chicken curry.</p>
+
+                    <div class="food-bottom">
+
+                        <h4>Rs. 1,200</h4>
+
+                        <button class="add-cart" data-name="Chicken Rice & Curry" data-price="1200">
+                            <i class="fas fa-cart-plus"></i> Add
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Dessert Card -->
+
+            <div class="food-card" data-category="dessert">
+
+                <div class="food-image">
+
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600" alt="Chocolate Cake">
+
+                </div>
+
+                <div class="food-details">
+
+                    <h3>Chocolate Cake</h3>
+
+                    <p>Rich and delicious chocolate cake for dessert lovers.</p>
+
+                    <div class="food-bottom">
+
+                        <h4>Rs. 850</h4>
+
+                        <button class="add-cart" data-name="Chocolate Cake" data-price="850">
+                            <i class="fas fa-cart-plus"></i> Add
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Beverage Card -->
+
+            <div class="food-card" data-category="beverage">
+
+                <div class="food-image">
+
+                    <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=600" alt="Fresh Juice">
+
+                </div>
+
+                <div class="food-details">
+
+                    <h3>Fresh Fruit Juice</h3>
+
+                    <p>Refreshing fresh fruit juice made with natural fruits.</p>
+
+                    <div class="food-bottom">
+
+                        <h4>Rs. 650</h4>
+
+                        <button class="add-cart" data-name="Fresh Fruit Juice" data-price="650">
+                            <i class="fas fa-cart-plus"></i> Add
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Special Offers Section -->
+
+    <section class="offers-section" id="offers">
+
+        <div class="section-heading">
+
+            <p class="offer-subtitle">SPECIAL DEALS FOR YOU</p>
+
+            <h2>Our Special <span>Offers</span></h2>
+
+            <p>Enjoy your favourite food with amazing deals and discounts.</p>
+
+        </div>
+
+
+        <div class="offers-container">
+
+
+            <!-- Offer 1 -->
+
+            <div class="offer-card">
+
+                <div class="offer-image">
+
+                    <img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=600"
+                        alt="Family Pizza Offer">
+
+                    <span class="discount">20% OFF</span>
+
+                </div>
+
+                <div class="offer-details">
+
+                    <h3>Family Feast</h3>
+
+                    <p>
+                        Enjoy two delicious pizzas with fries and a large drink.
+                        Perfect for sharing with your family.
+                    </p>
+
+                    <h4>Special Family Deal</h4>
+
+                    <a href="#menu" class="offer-btn">
+                        Order Now <i class="fas fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Offer 2 -->
+
+            <div class="offer-card">
+
+                <div class="offer-image">
+
+                    <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=600" alt="Burger Combo Offer">
+
+                    <span class="discount">15% OFF</span>
+
+                </div>
+
+                <div class="offer-details">
+
+                    <h3>Burger Combo</h3>
+
+                    <p>Enjoy two juicy burgers with crispy fries and refreshing soft drinks.
+                    </p>
+
+                    <h4>Perfect Combo Deal</h4>
+
+                    <a href="#menu" class="offer-btn">
+                        Order Now <i class="fas fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Offer 3 -->
+
+            <div class="offer-card">
+
+                <div class="offer-image">
+
+                    <img src="https://www.tamingtwins.com/wp-content/uploads/2026/06/EggFriedRice4.jpg"
+                        alt="Student Special Offer">
+
+                    <span class="discount">SPECIAL DEAL</span>
+
+                </div>
+
+                <div class="offer-details">
+                    <h3>Student Special</h3>
+
+                    <p> Delicious Fried Rice at a special student-friendly price.</p>
+
+                    <h4>Student Exclusive Deal</h4>
+
+                    <a href="#menu" class="offer-btn"> Order Now <i class="fas fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!--CONTACT US SECTION -->
+
+<section class="contact-section" id="contact">
+
+    <!-- Section Heading -->
+
+    <div class="section-heading">
+
+        <p class="section-subtitle">GET IN TOUCH</p>
+
+        <h2>Contact <span>Us</span></h2>
+
+        <p>We would love to hear from you. Contact us anytime!</p>
+
+    </div>
+
+
+    <div class="contact-container">
+
+        <!-- LEFT SIDE - CONTACT INFORMATION -->
+
+        <div class="contact-information">
+
+            <h3>Let's Talk About Food!</h3>
+
+            <p class="contact-description">
+                Have questions about our menu, special offers or services?
+                Feel free to contact Royal Taste Restaurant.
+                We are always happy to help you!
+            </p>
+
+
+            <!-- Address -->
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    <i class="fas fa-location-dot"></i>
+                </div>
+
+                <div>
+                    <h4>Our Location</h4>
+                    <p> Galle Road Colombo 3, Sri Lanka</p>
+                </div>
+
+            </div>
+
+
+            <!-- Telephone -->
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+
+                <div>
+                    <h4>Telephone Number</h4>
+                    <p>+94 71 277 6756</p>
+                </div>
+
+            </div>
+
+
+            <!-- Email -->
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+
+                <div>
+                    <h4>Email Address</h4>
+                    <p>RoyalTaste@gmail.com</p>
+                </div>
+
+            </div>
+
+
+            <!-- Opening Hours -->
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+
+                <div>
+                    <h4>Opening Hours</h4>
+                    <p>Monday - Sunday: 8 AM - 10 PM</p>
+                </div>
+
+            </div>
+
+
+            <!-- Social Media -->
+
+            <div class="contact-social">
+
+                <h4>Follow Us</h4>
+
+                <a href="#" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="#" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- RIGHT SIDE - CONTACT FORM -->
+
+        <div class="contact-form-container">
+
+            <h3>Send Us a Message</h3>
+
+            <p>Fill out the form below and get in touch with us.</p>
+
+
+            <form class="contact-form" id="contactForm">
+
+                <!-- Name -->
+
+                <div class="form-group">
+
+                    <label for="contactName">Your Name</label>
+
+                    <input
+                        type="text"
+                        id="contactName"
+                        placeholder="Enter your full name"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Email -->
+
+                <div class="form-group">
+
+                    <label for="contactEmail">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="contactEmail"
+                        placeholder="Enter your email address"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Subject -->
+
+                <div class="form-group">
+
+                    <label for="contactSubject">Subject</label>
+
+                    <input
+                        type="text"
+                        id="contactSubject"
+                        placeholder="Enter message subject"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Message -->
+
+                <div class="form-group">
+
+                    <label for="contactMessage">Your Message</label>
+
+                    <textarea
+                        id="contactMessage"
+                        rows="5"
+                        placeholder="Write your message here..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <!-- Submit Button -->
+
+                <button type="submit" class="contact-submit-btn">
+                    Send Message
+
+                    <i class="fas fa-paper-plane"></i>
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- GOOGLE MAPS -->
+
+    <div class="map-container">
+
+        <h3>Find Us on <span>Google Maps</span></h3>
+
+        <p>Visit Royal Taste Restaurant in Colombo, Sri Lanka.</p>
+
+        <iframe src="https://maps.google.com/maps?q=Colombo%2C%20Sri%20Lanka&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            width="100%"
+            height="400"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Restaurant Details -->
+        <div class="footer-box">
+            <h2 class="footer-logo">Royal <span>Taste</span></h2>
+
+            <p>
+                Experience the royal taste of delicious food.
+                We serve freshly prepared meals with love,
+                quality ingredients, and unforgettable flavours.
+            </p>
+
+            <div class="footer-social">
+                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#menu">Our Menu</a></li>
+                <li><a href="#offers">Special Offers</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Food Categories -->
+        <div class="footer-box">
+            <h3>Our Menu</h3>
+
+            <ul>
+                <li><a href="#menu">Pizza</a></li>
+                <li><a href="#menu">Burgers</a></li>
+                <li><a href="#menu">Pasta</a></li>
+                <li><a href="#menu">Rice & Curry</a></li>
+                <li><a href="#menu">Desserts</a></li>
+                <li><a href="#menu">Beverages</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="footer-box">
+            <h3>Contact Information</h3>
+
+            <p><i class="fas fa-map-marker-alt"></i> Colombo, Sri Lanka</p>
+            <p><i class="fas fa-phone"></i> +94 71 277 6756</p>
+            <p><i class="fas fa-envelope"></i> RoyalTaste@gmail.com</p>
+            <p><i class="fas fa-clock"></i> Open Daily: 10 AM - 10 PM</p>
+        </div>
+
+    </div>
+
+    <!-- Copyright -->
+
+    <div class="footer-bottom">
+        <p>
+            &copy; 2026 <span>Royal Taste Restaurant.</span>
+            All Rights Reserved.
+        </p>
+        
+        <p>Designed By <i class="fas fa-heart"></i>Sasiru Bandula</p>
+    </div>
+
+</footer>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
